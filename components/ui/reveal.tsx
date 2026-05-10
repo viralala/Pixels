@@ -104,10 +104,9 @@ export function RevealText({
 
   const words = text.split(" ");
 
-  const Tag = as as keyof JSX.IntrinsicElements;
+  const Tag = as as any;
 
   return (
-    // @ts-expect-error — generic intrinsic element
     <Tag ref={ref} className={cn(className)}>
       {words.map((word, i) => (
         <span

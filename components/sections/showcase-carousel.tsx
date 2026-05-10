@@ -305,7 +305,7 @@ function Carousel3D({ projects }: Carousel3DProps) {
               rotation={smoothRotation}
               isActive={activeIndex === i}
               floatSeed={i * 0.35}
-              reducedMotion={prefersReducedMotion}
+              reducedMotion={!!prefersReducedMotion}
             />
           ))}
         </motion.div>

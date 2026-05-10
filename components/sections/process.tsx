@@ -108,7 +108,7 @@ export function Process() {
 }
 
 function ProcessStep({ step, index }: { step: Step; index: number }) {
-  const ref = useRef<HTMLLIElement | null>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start 80%", "start 30%"],
